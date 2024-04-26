@@ -1,0 +1,53 @@
+@import '../../public/styles/variables';
+@import '../../public/styles/mixins';
+
+.header {
+	height: 260px;
+	background: url('../assets/header/header-bg.jpg') 50% 0 no-repeat;
+	background-size: cover;
+}
+
+.header-title {
+	font-size: 40px;
+	font-weight: 700;
+	color: $white;
+	font-family: 'Merienda Bold';
+}
+
+.header-subtile {
+	font-size: 24;
+	font-weight: 700;
+	color: $white;
+	margin-bottom: 30px;
+}
+
+.header-content {
+	display: flex;
+	flex-flow: column nowrap;
+	height: 100%;
+	text-align: center;
+}
+
+.header-btn {
+	min-width: 120px;
+}
+
+.header-navigation {
+	display: flex;
+	flex-flow: row nowrap;
+	padding: 50px 0 0;
+}
+
+.mainpage-header {
+	height: 635px;
+	background: url('../assets/header/mainpage-bg.jpg') 50% 0 no-repeat;
+	background-size: cover;
+}
+
+.mainpage-body {
+	flex-grow: 1;
+	display: flex;
+	flex-flow: column nowrap;
+	margin-top: 97px;
+	align-items: center;
+}

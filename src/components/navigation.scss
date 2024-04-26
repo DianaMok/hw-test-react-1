@@ -1,0 +1,72 @@
+@import '../../public/styles/variables';
+@import '../../public/styles/mixins';
+
+.header-logo {
+	position: absolute;
+	top: -25px;
+	left: -44px;
+	display: flex;
+	width: 44px;
+	height: 44px;
+
+	& svg {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.navigation {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	gap: 0 36px;
+
+	a {
+		position: relative;
+		display: flex;
+		align-items: center;
+		color: $white;
+		font-size: 12px;
+		padding-bottom: 10px;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			width: 0;
+			height: 3px;
+			opacity: 0.5;
+			background-color: $white;
+			transform: translate(-50%);
+			transition: all 0.3s ease-in-out;
+		}
+
+		&.isActive,
+		&:hover {
+			&::before {
+				width: calc(100% - 5px);
+				opacity: 1;
+			}
+		}
+	}
+
+	&.dark {
+		a {
+			color: $black;
+
+			&::before {
+				background-color: $black;
+			}
+		}
+		& svg {
+			path {
+				fill: $black;
+			}
+		}
+	}
+}

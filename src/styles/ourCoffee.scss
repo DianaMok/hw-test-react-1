@@ -1,0 +1,35 @@
+@import '../../public/styles/variables';
+@import '../../public/styles/mixins';
+
+.our-coffee-main {
+	max-width: 800px;
+	margin: 45px 0 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0 20px;
+
+	div:nth-child(1) {
+		display: flex;
+		justify-self: flex-end;
+
+		img {
+			display: block;
+			margin: auto;
+		}
+	}
+	div:nth-child(2) {
+		text-align: center;
+		margin-top: 20px;
+	}
+}
+
+.our-coffee-line {
+	width: 240px;
+	height: 1px;
+	background-color: $black;
+	margin: 20px auto;
+}
+
+.our-coffee-filter {
+	margin-bottom: 40px;
+}

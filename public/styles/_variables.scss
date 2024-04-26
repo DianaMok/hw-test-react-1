@@ -1,0 +1,252 @@
+/* COLORS */
+$black: #1a1a1a;
+$white: #fff;
+$blue-100: #00a8e7;
+$blue-80: #30bcf0;
+$blue-60: #61cbf2;
+$blue-40: #93daf5;
+$blue-20: #c8ecfa;
+$blue-10: #f4f7ff;
+$red-100: #ed0000;
+$red-80: #f83131;
+$red-60: #f75d5d;
+$red-40: #ed0000;
+$red-20: #ffcbcb;
+$red-10: #fff0f0;
+$yellow-100: #ea8916;
+$yellow-80: #f09830;
+$yellow-60: #f2b161;
+$yellow-40: #f5c993;
+$yellow-20: #fae3c8;
+$yellow-10: #fff8f0;
+$green-100: #389d52;
+$green-80: #54d174;
+$green-60: #5eeb82;
+$green-40: #93f5ac;
+$green-20: #c8fad5;
+$green-10: #ebfff0;
+$violet-100: #120a29;
+$violet-80: #492d70;
+$violet-60: #6a41a3;
+$violet-40: #a481d6;
+$violet-20: #decef5;
+$violet-10: #f1ebfa;
+$grey-100: #505562;
+$grey-80: #818798;
+$grey-60: #abafba;
+$grey-40: #d3d6de;
+$grey-20: #e8e9ee;
+$grey-10: #f5f6fa;
+$color-black-10: #00000010;
+$color-eerie-black: #1d1d1d;
+$color-bright-turquoise: #1ee3d7;
+$color-yankees-blue: #232440;
+$color-navy-blue: #0f005f;
+$color-cinder: #14111f;
+$color-steel-gray: #2a253d;
+$color-martinique: #312b47;
+$color-martinique-light: #413762;
+$color-blueberry: #4390f8;
+$color-tufts-blue: #3498db;
+$color-dim-gray: #646678;
+$color-quick-silver: #a9a4a8;
+$color-gray-80: #808080;
+$color-lavender-blush: #fff0f0;
+$color-gallery: #ebebeb;
+$color-lava: #d81414;
+$color-corn: #fff062;
+$color-yellow-green: #0cb80c;
+$color-lotion: #fafafa;
+$color-silver-beach: #c4c4c4;
+$color-deep-sliffed: #352d60;
+$color-another-grey: #d7dae7;
+
+/* COLORS BY USAGE */
+$color-primary: $violet-60;
+$color-btn-orange: $yellow-100;
+$color-btn-green: $green-80;
+$color-border: $grey-80;
+
+/* BUTTON GRADIENTS */
+$gradient-btn-blue: linear-gradient(
+  to right,
+  #00baff 0%,
+  #3ddafe 50%,
+  #00baff 100%
+);
+$gradient-btn-orange: linear-gradient(to right, #ea8916 0%, #f45f85 100%);
+$gradient-btn-green-blue: linear-gradient(to right, #5fd568 20%, #1ee3d7 80%);
+$gradient-btn-green-gradient: linear-gradient(
+  to right,
+  #39b54a 0%,
+  #1ee3d7 50%,
+  #39b54a 100%
+);
+$gradient-btn-white: linear-gradient(#fff, #fff);
+$gradient-btn-cta-overlay: linear-gradient(
+  90deg,
+  #bc75eb 0%,
+  #8a45e6 50%,
+  #bc75eb 100%
+);
+$gradient-btn-purple: linear-gradient(
+  90deg,
+  #7045e6 0%,
+  #9575eb 50%,
+  #7045e6 100%
+);
+
+/* ICON GRADIENTS */
+$gradient-icon-orange: linear-gradient(to top, #f45f85 0%, #ea8916 100%);
+$gradient-icon-acting: linear-gradient(135deg, #ea8916 0%, #f45f85 100%);
+$gradient-icon-music-videos: linear-gradient(135deg, #e8198b 0%, #6d0986 100%);
+$gradient-icon-dancing: linear-gradient(135deg, #b224ef 0%, #7579ff 100%);
+$gradient-icon-modeling: linear-gradient(135deg, #cc165f 0%, #6d0b32 100%);
+$gradient-icon-promotional-models: linear-gradient(
+  135deg,
+  #1ee3d7 0%,
+  #5fd568 100%
+);
+$gradient-icon-reality-tv: linear-gradient(135deg, #eb7b4c 0%, #9e8df8 100%);
+$gradient-icon-singing: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+$gradient-icon-theater: linear-gradient(135deg, #fb8eaf 0%, #f30707 100%);
+$gradient-icon-voiceover: linear-gradient(135deg, #3ddafe 0%, #00cfff 100%);
+$gradient-icon-pageant: linear-gradient(135deg, #df4aa4 0%, #b54ce7 100%);
+$gradient-icon-other: linear-gradient(135deg, #86a1ff 0%, #4d6fc8 100%);
+$gradient-icon-extras: linear-gradient(135deg, #4689ee 0%, #4ff4cd 100%);
+$gradient-icon-commercials: linear-gradient(135deg, #f7d14e 0%, #ef7734 100%);
+$gradient-icon-content-creators: linear-gradient(
+  135deg,
+  #3be4da 0%,
+  #f764c5 100%
+);
+$gradient-icon-influencers: linear-gradient(135deg, #eb7b4c 0%, #ff8ded 100%);
+
+/* CAROUSEL GRADIENTS */
+$gradient-metallic-green-right: linear-gradient(
+  to left,
+  rgba(37, 115, 20, 30%) 0%,
+  rgba(41, 115, 20, 0%) 100%
+);
+$gradient-metallic-green-left: linear-gradient(
+  to right,
+  rgba(37, 115, 20, 30%) 0%,
+  rgba(41, 115, 20, 0%) 100%
+);
+$gradient-black-right: linear-gradient(
+  to left,
+  #0009 0%,
+  rgba(0, 0, 0, 0%) 100%
+);
+$gradient-black-left: linear-gradient(
+  to right,
+  #0009 0%,
+  rgba(0, 0, 0, 0%) 100%
+);
+
+/* MISC GRADIENTS */
+$gradient-green-blue: linear-gradient(to right, #5fd568 0%, #1ee3d7 100%);
+$gradient-port-gore: linear-gradient(to left, #2d244a 0%, #20243d 100%);
+$gradient-light-blue: linear-gradient(to right, #3ddafe 0%, #00baff 100%);
+$gradient-black-top: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0%) 100%);
+$gradient-jakarta: linear-gradient(90deg, #393b4f 0%, #403b5b 100%);
+$gradient-black-snooze: linear-gradient(
+  to right,
+  $white 0%,
+  $white 35%,
+  rgba(255, 255, 255, 0%) 100%
+);
+$gradient-black-snooze-reverse: linear-gradient(
+  to left,
+  $white 0%,
+  $white 35%,
+  rgba(255, 255, 255, 0%) 100%
+);
+$gradient-violet-supper: linear-gradient(#b58ae524 100%, #b58ae500 0%);
+$gradient-cta-container: linear-gradient(
+  73deg,
+  rgba(138, 158, 230, 14%) -10.73%,
+  rgba(138, 152, 230, 0%) 30.59%
+);
+$gradient-halloween: linear-gradient(180deg, #112236 0%, #0a131f 100%);
+$gradient-breadcrumb-shadow: linear-gradient(
+  270deg,
+  #fff 12.5%,
+  rgba(255, 255, 255, 0%) 100%
+);
+$gradient-showcase-slide: linear-gradient(
+  to top,
+  #fff 10%,
+  rgba(255, 255, 255, 0%)
+);
+$gradient-showcase-title: linear-gradient(
+  to top,
+  #000 3%,
+  rgba(0, 0, 0, 0%) 100%
+);
+$gradient-agent-image-backdrop: linear-gradient(
+  135deg,
+  #8281c1 0%,
+  #7e5ba8 100%
+);
+$gradient-agent-image-overlay: linear-gradient(
+  135deg,
+  #6a69a5 0%,
+  #5f01d1 100%
+);
+
+/* SHADOWS */
+$shadow-button: 0 10px 20px #9ae9fc;
+$shadow-text-dark: 0 1px 3px rgba(0, 0, 0, 70%);
+$shadow-text-light: 0 1px 3px rgba(255, 255, 255, 70%);
+$shadow-box-dark: 0 2px 18px #00000026;
+$shadow-box-dark-wide: 0 1px 40px #00000026;
+$shadow-box-inset-light: inset 0 0 0 3px #eee;
+$shadow-tooltip: 0 0.6px 40px rgba(30, 41, 69, 10%);
+$shadow-card-container: 0 1px 40px #0000004d;
+$shadow-accordion: 0 30px 40px #00000026;
+$shadow-audio-player-progress: -100vw 0 0 100vw #000;
+$shadow-btn-orange: 0 10px 20px #f3b9ab26;
+$shadow-btn-purple: 0 10px 40px rgba(107, 25, 146, 20%);
+$shadow-btn-green-gradient: 0 10px 20px #beeec6;
+$shadow-btn-blue-hover: inset 0 0 0 2px #00baff;
+$shadow-btn-orange-hover: inset 0 0 0 2px #ea8916;
+$shadow-btn-purple-hover: inset 0 0 0 2px #7146e6;
+$shadow-btn-midnight-hover: inset 0 0 0 2px rgba(#641971, 0.4);
+$shadow-btn-cta: 0 10px 40px rgba(49, 47, 131, 26%);
+$shadow-btn-cta-hover: 0 10px 40px 0 rgba(49, 47, 131, 35%);
+$shadow-form-control: 0 5px 10px #0000001a;
+$shadow-carousel-arrow-hover: 0 5px 10px #00000026;
+$shadow-casting-call: 0 3px 8px #00000026;
+$shadow-casting-call-hover: 0 3px 15px #00000026;
+$shadow-mobile-sidebar-menu-item: 0 1px 40px rgba(#000, 0.015);
+$shadow-article-container: 0 4px 24px 0 #0000001a;
+$shadow-image-link-hover: 0 5px 20px #0000001a;
+$shadow-switch: inset 0 0 0 2px #bbb;
+$shadow-switch-active: inset 0 0 0 2px #5fd568;
+$shadow-btn-back: 0 4px 10px rgba(20, 24, 67, 31%);
+$shadow-casting-call-text: 0 2px 10px #ddd;
+$shadow-image-inner-container: 0 16px 32px rgba(43, 36, 72, 20%);
+$shadow-agent-card: 0 14px 40px #b6b6b626;
+$shadow-statistics-panel: 0 4px 30px #421f4d14;
+$shadow-blog-box: 0 4px 40px #421f4d14;
+$shadow-blog-box-hover: -8px 14px 30px #421f4d24;
+$shadow-quote-box: 0 4px 20px #421f4d14;
+$shadow-quote-box-hover: 0 4px 20px #421f4d24;
+$shadow-talent-slide-hover: -8px 14px 40px #421f4d24;
+
+/* SPACES */
+$space-5: 5px;
+$space-10: 10px;
+$space-15: 15px;
+$space-20: 20px;
+$space-25: 25px;
+$space-30: 30px;
+$space-35: 35px;
+$space-40: 40px;
+$space-45: 45px;
+$space-50: 50px;
+$space-55: 55px;
+$space-60: 60px;
+$space-65: 65px;
+$content-max-width: 1240px !default;

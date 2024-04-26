@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Homepage from './pages/mainpage';
+import OurCoffee from './pages/ourCoffee';
+import Header from './components/header';
+import Footer from './components/footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './app.scss';
+
+class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			currentPage: 'Homepage',
+			data: [],
+			term: '',
+			pager: '/',
+		};
+	}
+
+	onPageSelect = to => {
+		this.setState({ pager: to });
+	};
+
+	render() {
+		return (
+			<Router>
+				{/* <PageContext.Provider value={{ page: this.state.currentPage }}> */}
+				<Header pager={this.state.pager} onPageSelect={this.onPageSelect} />
+				{/* </PageContext.Provider> */}
+				<Routes>
+					<Route path="/" element={<Homepage />} />
+					<Route path="/our-coffee" element={<OurCoffee />} />
+				</Routes>
+				<Footer pager={this.state.pager} onPageSelect={this.onPageSelect} />
+			</Router>
+		);
+	}
 }
 
 export default App;

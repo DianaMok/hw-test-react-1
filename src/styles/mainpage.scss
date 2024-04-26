@@ -1,0 +1,23 @@
+@import '../../public/styles/variables';
+@import '../../public/styles/mixins';
+
+.mainpage-title {
+	text-align: center;
+}
+
+.beans-separate-line {
+	margin: 0 auto 30px;
+}
+
+.mainpage-contex {
+	max-width: 590px;
+	margin: 0 auto 70px;
+
+	p {
+		text-align: center;
+
+		&:not(:last-child) {
+			margin: 0 0 20px 0;
+		}
+	}
+}

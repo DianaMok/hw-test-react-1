@@ -1,0 +1,13 @@
+@import '../../public/styles/variables';
+@import '../../public/styles/mixins';
+
+.footer {
+	padding: 50px 0;
+}
+
+.footer-navigation {
+	display: flex;
+	flex-flow: row nowrap;
+	padding: 50px 0 20px;
+	justify-content: center;
+}
